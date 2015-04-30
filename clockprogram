@@ -1,0 +1,12 @@
+void setup(){
+  size(400,400);
+}
+
+void draw() {
+  int s = second();  // Values from 0 - 59
+  int m = minute();  // Values from 0 - 59
+  int h = hour();    // Values from 0 - 23
+  background(s*4,m*4,h*10);
+  fill(0);
+  text(h + " : " + m + " : " + s,width/2,height/2);
+};
